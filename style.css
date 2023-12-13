@@ -1,0 +1,537 @@
+/* base */
+
+body{
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    color: #333;
+    background-color: #fff;
+}
+
+header{
+    background-color: #ebdec1;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: auto;
+    padding: 1.8vw 1.2vw 0 2.5vw;
+    position: fixed;
+    opacity: 0.8;
+    top: 0;
+    z-index: 100;
+}
+
+/* header */
+#header-item{
+    display: flex;
+    justify-content: right;
+    text-align: center;
+}
+
+#header-list{
+    font-size: 1.5rem;
+    width: auto;
+    height: auto;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+#header-list > a{
+    color: #8c6239;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all .6s;
+    opacity: 1;
+}
+
+
+#header-list a:hover{
+    opacity: 0.6;
+}
+
+header img{
+    width: 140px;
+    height: auto;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+
+article{
+    margin-top: 5rem;
+    font-size: 1.2rem;
+}
+
+footer{
+    height: 3rem;
+    margin-top: 7rem;
+    background-color: #523715;
+    opacity: 0.8;
+}
+
+footer p{
+    color: #fff;
+    padding: 0.65rem;
+    text-align: center;
+}
+
+.wrapper{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* top page style */
+.top-page{
+    position: relative;
+    margin-bottom: 13rem;
+}
+
+.main-img{
+    z-index: -999;
+}
+
+.top-page h1{
+    color: #333;
+    position: absolute;
+    bottom: -8rem;
+    right: 15vw;
+    font-size: 4vw;
+    font-weight: 600;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    letter-spacing: 40px;
+    z-index: 1;
+    align-items: center;
+}
+
+.top-page:before{
+    content: "";
+    position: absolute;
+    bottom: -10rem;
+    right: 16vw;
+    width: 8vw;
+    height: 80vh;
+    background-color: #523715;
+
+}
+
+.top-page:after{
+    content: "";
+    position: absolute;
+    bottom: -8rem;
+    right: 14vw;
+    width: 8vw;
+    height: 80vh;
+    background-color: #fff;
+}
+
+.menu-photo-Btn{
+    float: right;
+    padding-right: 10vw;
+}
+
+
+#photo-viewmore {
+	position: absolute;
+    margin-top: 28rem;
+    margin-left: 30vw;
+    bottom: 0;
+    right: 0;
+}
+
+#photo-viewmore .btnarrow5{
+    margin-right: 6vw;
+}
+
+/*矢印が右に移動する*/
+.btnarrow5{
+    /*矢印と下線の基点とするためrelativeを指定*/
+  position: relative;
+    /*形状*/
+    display: inline-block;
+  padding: 0 20px;
+    color: #333;
+    text-decoration: none;
+    outline: none;
+}
+
+/*矢印と下線の形状*/
+.btnarrow5::before{
+    content: '';
+    /*絶対配置で下線の位置を決める*/
+  position: absolute;
+    bottom:-8px;
+    left:15%;
+    /*下線の形状*/    
+    width: 100px;
+    height: 2px;
+  background:#333;
+    /*アニメーションの指定*/
+    transition: all .3s;
+}
+
+/*hoverした際の移動*/
+.btnarrow5:hover::before{
+    left:30%;
+}
+
+
+
+
+
+/* about page style */
+
+/* main */
+#about-main{
+    position: relative;
+    margin-top: 10rem;
+
+}
+
+#profile{
+    text-align: center;
+}
+
+#about{
+    font-size: 2.5rem;
+    text-align: center;  
+}
+
+#about-nav{
+    position: absolute;
+    top: 1.5rem;
+    margin-left: 57%;
+    margin-right: 10%;
+    display: flex;
+}
+
+#about-list1{
+    text-align: center;
+    width: 200px;
+    color: #888;
+    border-left: 2px solid #b0941e;
+}
+
+#about-list2{
+    text-align: center;
+    width: 100px;
+    color: #888;
+    border-left: 2px solid #b0941e;
+}
+
+#about-ex{
+    margin-top: 3rem;
+    font-size: 1rem;
+    line-height: 2.2rem;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#profile-pc{
+    margin-top: 3rem;
+    margin-left: 15vw;
+}
+ 
+
+#profile-nav{
+    display: flex;
+}
+
+#profile-list{
+    margin-top: 10vh;
+    padding-right: 1%;
+}
+
+#instagram-logo{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+#profile-item-logo{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+
+
+
+/* photo style css */
+#photo-main{
+    position: relative;
+    margin-top: 10rem;
+}
+
+#photo{
+    font-size: 2.5rem;
+    text-align: center;  
+}
+
+#photo-nav{
+    position: absolute;
+    top: 1.5rem;
+    margin-left: 57%;
+    margin-right: 10%;
+    display: flex;
+}
+
+#photo-list1{
+    text-align: center;
+    width: 100px;
+    color: #888;
+    border-left: 2px solid #b0941e;
+}
+
+#photo-list2{
+    text-align: center;
+    width: 110px;
+    color: #888;
+    border-left: 2px solid #b0941e;
+}
+
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 6%;
+    margin-bottom: 3rem;
+}
+
+.food{
+    padding: 0 5vw;
+}
+
+
+.tile-item {
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		relative;	/* 相対位置指定 */
+}
+
+.tile-item .caption {
+	font-size:		100%;
+	text-align: 		center;
+    align-items: center;
+	padding-top:		9vw;
+	color:			#fff;
+}
+
+.tile-item .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.tile-item :hover .mask {
+	opacity:		1;	/* マスクを表示する */
+}
+
+/* shop1 style css */
+#shop1-main{
+    position: relative;
+    margin-top: 10rem;
+}
+
+#border{
+    font-size: 2.5rem;
+    text-align: center;  
+    margin-bottom: 5rem;
+    border-bottom: 1px solid #b0941e;
+}
+#shop-nav{
+    margin-left: 10rem;
+    justify-content: left;
+    display: flex;
+}
+
+#shop-navie{
+    margin-top: 5rem;
+    justify-content: right;
+    margin-right: 10rem;
+    display: flex;
+}
+
+#shop-par{
+     text-align: center;
+}
+
+.title-item {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.title-item a {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1500px){
+    #main-visual{
+        margin-top: 15rem;
+    }
+}
+
+
+
+/* ipad用 */
+
+@media screen and (min-width: 769px) and (max-width: 850px) {
+    /* about page responsive */
+    #about-nav{
+        margin-left: 60%;
+    }
+    
+    #about-list1{
+        width: 180px;
+    }
+
+
+    #profile-nav{
+       padding: 0 2%;
+       margin-top: 2rem;
+     }
+
+    #profile-pc{
+        margin: auto;
+     }
+ 
+     #profile-item{
+         font-size: 72%;
+     }
+ 
+     #profile-list{
+         padding: initial;
+         padding: 0 5%;
+     }
+ 
+     #profile-item-logo{
+         padding-top: 6%;
+         padding-bottom: 6%;
+     }
+/* photo page responsive */
+    .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+ }
+
+
+
+
+ /* 携帯用 */
+
+@media screen and (max-width:768px){
+
+    #header-list{
+        font-size: 120%;
+    }
+    
+    #main-title{
+        font-size: 140%;
+        line-height: 140vw;
+    }
+
+    /* about style responsive */
+    #about-nav{
+        margin: initial;
+        position: inherit; 
+        justify-content: center;     
+    }
+
+    #about-list1{
+        width: 200px;
+        margin-top: 1.6vw;
+        border: none;
+        border-right: #b0941e 1px solid;
+    }
+
+    #about-list2{
+        width: 130px;
+        margin-top: 1.6vw;
+        border: none;
+    }
+
+    #about-ex{
+        font-size: 75%;
+        padding: initial;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+    }
+
+    #profile{
+        margin-bottom: 2rem;
+    }
+
+    #profile-nav{
+        flex-direction: column;
+    }
+
+    #profile-pc{
+       margin: auto;
+    }
+
+    #profile-item{
+        font-size: 72%;
+    }
+
+    #profile-list{
+        padding: initial;
+        padding: 0 5%;
+    }
+
+    #profile-item-logo{
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+
+
+    /* photo page responsive */
+
+    #photo-nav{
+        margin: initial;
+        position: inherit; 
+        justify-content: center;     
+    }
+
+    #photo-list1{
+        width: 100px;
+        margin-top: 1.6vw;
+        border: none;
+        border-right: #b0941e 1px solid;
+    }
+
+    #photo-list2{
+        width: 110px;
+        margin-top: 1.6vw;
+        border: none;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+}
+

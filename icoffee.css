@@ -1,0 +1,234 @@
+/* base */
+
+body{
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: auto;
+    padding: 1.8vw 1.2vw 0 2.5vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+/* header */
+#header-item{
+    display: flex;
+    justify-content: right;
+    text-align: center;
+}
+
+#header-list{
+    font-size: 1.5rem;
+    width: auto;
+    height: auto;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+#header-list > a{
+        color: #8c6239;
+        font-size: 1.3rem;
+        font-weight: 600;
+        transition: all .6s;
+}
+
+#header-list a:hover{
+    opacity: 0.6;
+}
+
+header img{
+    width: 140px;
+    height: auto;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+
+article{
+    margin-top: 5rem;
+    font-size: 1.2rem;
+}
+
+footer{
+    height: 3rem;
+    margin-top: 7rem;
+    opacity: 0.8;
+}
+
+footer p{
+    color: #eee;
+    padding: 0.65rem;
+    text-align: center;
+}
+
+.wrapper{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* i coffee.html css */
+
+
+
+.mainvisual{
+    margin-top: 5rem;
+    position: relative;
+    margin-right: 10vw;
+    margin-top: 10rem;
+    margin-left: 30%;
+}
+
+.main-img{
+    display: inline-block;
+    width: 60vw;
+    height: auto;
+}
+
+.main-tit{
+    font-family:'Josefin Sans', "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    position: relative;
+    font-size: 10vw;
+    letter-spacing: 3vw;
+    line-height: 150px;
+    position: absolute;
+    top: 10%;
+    left: -2vw;
+    color: #fff;
+}
+
+.main-tit:before{
+    content: "i";
+    position: absolute;
+    top: 0;
+    left: -2vw;
+    color: #B9986C;
+    z-index: 1;
+}
+
+.insta-ison{
+    position: relative;
+}
+
+.insta-icon{
+    position: absolute;
+    bottom: 2rem;
+    right: 1.5rem;
+    position: fixed;
+    width: 3.5vw;
+    z-index: 1;
+}
+
+.insta-ison::before{
+    content: "";
+    position: absolute;
+    position: fixed;
+    bottom: 15vh;
+    right: 2.5rem;
+    width: 2px;
+    height: 5rem;
+    background-color: #333;
+
+}
+
+/* i coffee history */
+
+
+.history-tit{
+    position: relative;
+    font-family:'Josefin Sans', "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    margin-top: 6rem;
+    margin-left: 10vw;
+    font-size: 3em;
+}
+
+.history-tit:before{
+    position: absolute;
+    content: "";
+    top: 2rem;
+    left: 10rem;
+    width: 60vw;
+    height: 2px;
+    background-color: #000;
+}
+
+.history-img-ex{
+    position: relative;
+    display: flex;
+    margin-left: 15vw;
+    margin-top: 5rem;
+}
+
+.history img{
+    width: 35vw;
+    height: auto;
+}
+
+.history p{
+    position: absolute;
+    font-family:  "yu-gothic-pr6n", sans-serif;
+    top: 5rem;
+    font-size: 1.3vw;
+    margin-left: 25vw;
+    height: 200px;
+    line-height: 3vw;
+}
+
+.menu-img-ex{
+    position: relative;
+    display: flex;
+    margin-left: 15vw;
+    margin-top: 5rem;
+}
+
+
+ .menu-img-ex:before{
+    position: absolute;
+    content: "";
+    width: 30vw;
+    height: 20vw;
+    top:5rem;
+    left: 9rem;
+    z-index: -1;
+    border: solid #000 3px;
+ }
+
+ .food{
+    padding: 0 4%;
+}
+
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6%;
+    margin-bottom: 3rem;
+}
+
+ .item{
+    position: relative;
+ }
+
+ .kafeore-benben-ex{
+    position: absolute;
+    color: #eee;
+    bottom: 0;
+    right: 1.4rem;
+    font-size: 1.3vw;
+ }

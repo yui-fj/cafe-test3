@@ -1,0 +1,217 @@
+/* base */
+
+body{
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    color: #333;
+    background-color: #000;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: auto;
+    padding: 1.8vw 1.2vw 0 2.5vw;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.6;
+    top: 0;
+    z-index: 100;
+}
+
+/* header */
+#header-item{
+    display: flex;
+    justify-content: right;
+    text-align: center;
+}
+
+#header-list{
+    font-size: 1.5rem;
+    width: auto;
+    height: auto;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+#header-list > a{
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 600;
+        transition: all .6s;
+}
+
+#header-list a:hover{
+    opacity: 0.6;
+}
+
+header img{
+    width: 140px;
+    height: auto;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+
+article{
+    margin-top: 5rem;
+    font-size: 1.2rem;
+}
+
+footer{
+    height: 3rem;
+    margin-top: 7rem;
+    opacity: 0.8;
+}
+
+footer p{
+    color: #eee;
+    padding: 0.65rem;
+    text-align: center;
+}
+
+.wrapper{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* benben.html style.css */
+
+/* benben-mainvisual */
+.benben-visual{
+    position: relative;
+    text-align: center;
+    margin-top: 5.5rem;
+    margin-bottom: 4rem;
+}
+
+.main-benben-visual{
+    width: 1200px;  
+    height: auto;
+    display: inline-block; 
+}
+
+.benben-maintitle{
+    position: absolute;
+    color: #eee;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3vw;
+}
+
+/* benben-history */
+.history{
+    color: #eee;
+    margin-top: 10em;
+}
+
+.history-title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.master-benben{
+    width: 40vw;
+    display: flex;
+}
+
+.history-master-ex{
+    position: relative;
+    display: flex;
+    padding: 0 5vw;
+    margin-top: 6rem;
+}
+
+.history-ex{
+    font-size: 1.3vw;
+    line-height: 50px;
+    padding: 0 0 0 10vw ;
+}
+
+.benben-shop{
+    width: 50vw;
+    position: absolute;
+    top: -8rem;
+    right: 8rem;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* benben-menu */
+
+.menu{
+    text-align: center;
+    color: #eee;
+    margin-top: 8em;
+}
+
+.benben-menu{
+   width: 50vw;
+   display: inline-block;
+   margin-top: 2rem;
+}
+
+
+/* benben-grid */
+.food{
+    padding: 0 4%;
+}
+
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6%;
+    margin-bottom: 3rem;
+}
+
+ .item{
+    position: relative;
+ }
+
+ .kafeore-benben-ex{
+    position: absolute;
+    color: #eee;
+    bottom: 0;
+    right: 1.4rem;
+    font-size: 1.3vw;
+ }
+
+ /* benben-map */
+ .map{
+    margin-left: 3vw;
+    display: flex;
+    color: #eee;
+    justify-content: center;
+ }
+
+ .map-loot{
+    width: 40vw;
+ }
+
+ .map-ex{
+    line-height: 50px;
+    font-size: 1.2vw;
+    margin-left: 4rem;
+ }
+
+ /* benben-thoughts */
+ .thoghts{
+    margin-bottom: 8rem;
+    margin-top: 4rem;
+ }
+
+ .thoughts-ex{
+    padding-left:30vw ;
+    color: #eee;
+    font-size: 1.1vw;
+ }
